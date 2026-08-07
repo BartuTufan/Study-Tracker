@@ -213,6 +213,7 @@
                     <label class="block text-sm text-textMuted mb-1">Subject</label>
                     <select id="bookSubject" required class="w-full bg-bgDark border border-gray-700 rounded-lg p-2.5 text-white text-sm">
                         <option value="Matematik">Matematik</option>
+                        <option value="Olimpiyat Matematik">Olimpiyat Matematik</option>
                         <option value="Fizik">Fizik</option>
                         <option value="Kimya">Kimya</option>
                         <option value="Biyoloji">Biyoloji</option>
@@ -334,7 +335,7 @@
             history: []
         };
 
-        const kitaplıkList = ['Matematik', 'Fizik', 'Kimya', 'Biyoloji', 'Türkçe', 'Geometri', 'Sosyal'];
+        const kitaplıkList = ['Matematik', 'Olimpiyat Matematik', 'Fizik', 'Kimya', 'Biyoloji', 'Türkçe', 'Geometri', 'Sosyal'];
 
         function initApp() {
             db.collection("appData").doc("mainDoc").onSnapshot((doc) => {
