@@ -628,7 +628,7 @@
             const container = document.getElementById('calendar-strip');
             container.innerHTML = '';
             let today = new Date();
-            for(let i = -3; i <= 10; i++) {
+            for(let i = -3; i <= 13; i++) {
                 let d = new Date(today);
                 d.setDate(d.getDate() + i);
                 let dStr = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
